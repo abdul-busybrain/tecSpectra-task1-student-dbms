@@ -1,0 +1,17 @@
+/* css reset     */
+*:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.welcome-msg {
+  font-family: "Poppins", sans-serif;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
