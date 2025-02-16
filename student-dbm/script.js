@@ -67,7 +67,7 @@ function searchStudent() {
   const filteredStudents = students.filter(
     (student) =>
       student.name.toLowerCase().includes(searchTerm) ||
-      student.id.toLowerCase().toLowerCase().includes(searchTerm)
+      student.id.toLowerCase().includes(searchTerm)
   );
   renderTable(filteredStudents);
 }
