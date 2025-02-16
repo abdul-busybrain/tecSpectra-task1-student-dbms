@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Data Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Data Management</h1>
+
+      <!-- Search Functionality -->
+      <div class="search-section">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by name or ID..."
+        />
+        <button onclick="searchStudent()">Search</button>
+      </div>
+
+      <!-- Add Student Form -->
+      <div class="form-section">
+        <h2>Add New Student</h2>
+        <input type="text" id="studentName" placeholder="Name" />
+        <input type="text" id="studentId" placeholder="ID" />
+        <input type="text" id="studentClass" placeholder="Class" />
+        <input type="text" id="studentGrade" placeholder="Grade" />
+        <button onclick="addStudent()">Add Student</button>
+      </div>
+
+      <!-- Display Student Data -->
+      <div class="table-section">
+        <h2>Student Records</h2>
+        <table id="studentTable">
+          <thead>
+            <tr>
+              <th>S/N</th>
+              <th>Name</th>
+              <th>ID</th>
+              <th>Class</th>
+              <th>Grade</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
