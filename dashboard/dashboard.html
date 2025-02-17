@@ -7,14 +7,13 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <h1>Welcome to the Dashboard</h1>
-    <p>You have logged in</p>
-    <button onclick="logout()">Logout</button>
-    <script src="./script.js">
-      function logout(){
-        sessionStorage.removeItem('user')
-        window.location.href ='../auth/loginPage.html'
-      }
-    </script>
+    <nav id="navbar"></nav>
+
+    <main id="">
+      <h1>Welcome to Your Dashboard</h1>
+      <div id="role-specific-content"></div>
+    </main>
+
+    <script src="./dashboard.js"></script>
   </body>
 </html>

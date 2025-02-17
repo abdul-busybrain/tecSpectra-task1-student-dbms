@@ -20,7 +20,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     console.log("User stored in sessionStorage", user);
 
     // Redirect to dashboard
-    window.location.href = "../dashboard/index.html";
+    window.location.href = "../dashboard/dashboard.html";
   } else {
     alert("Invalid username or password");
   }
