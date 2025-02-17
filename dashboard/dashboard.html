@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <h1>Welcome to the Dashboard</h1>
+    <p>You have logged in</p>
+    <button onclick="logout()">Logout</button>
+    <script src="./script.js">
+      function logout(){
+        sessionStorage.removeItem('user')
+        window.location.href ='../auth/loginPage.html'
+      }
+    </script>
+  </body>
+</html>
