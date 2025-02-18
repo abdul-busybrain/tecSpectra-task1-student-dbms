@@ -2,7 +2,7 @@ function checkAccess() {
   const user = JSON.parse(sessionStorage.getItem("user"));
   if (!user || user.role !== "teacher") {
     alert("You do not have permission to access this page.");
-    window.location = "../../auth/loginPage.html";
+    window.location = "../../auth/login.html";
   }
 }
 

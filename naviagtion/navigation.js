@@ -22,8 +22,8 @@ function updateNavbar() {
           `;
     } else {
       links = `
-          <li><a href="./loginPage.html">Login</a></li>
-          <li><a href="./registerPage.html">Register</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./register.html">Register</a></li>
         `;
     }
   }

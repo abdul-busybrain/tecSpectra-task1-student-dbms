@@ -3,14 +3,14 @@ function checkAccess() {
 
   if (!user) {
     alert("You need to log in to access this page.");
-    window.location = "../auth/loginPage.html";
+    window.location = "../auth/login.html";
     return;
   }
 
   const validRoles = ["admin", "teacher", "student"];
   if (!validRoles.includes(user.role)) {
     alert("You do not have permission to access this page.");
-    window.location = "../auth/loginPage.html";
+    window.location = "../auth/login.html";
     return;
   }
 
@@ -52,8 +52,8 @@ function updateNavbar() {
   } else {
     navbar.innerHTML = `
       <ul>
-        <li><a href="../auth/loginPage.html">Login</a></li>
-        <li><a href="../auth/registerPage.html">Register</a></li>
+        <li><a href="../auth/login.html">Login</a></li>
+        <li><a href="../auth/register.html">Register</a></li>
       </ul>
     `;
   }

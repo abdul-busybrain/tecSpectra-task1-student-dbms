@@ -20,5 +20,5 @@ document
     localStorage.setItem("users", JSON.stringify(users));
 
     alert(`${fullName} your ${role} account has been created successfully`);
-    window.location.href = "./loginPage.html";
+    window.location.href = "./login.html";
   });
