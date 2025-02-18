@@ -1,45 +1,112 @@
-body {
-  font-family: Arial, sans-serif;
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-nav {
-  background-color: #333;
-  color: white;
-  padding: 10px;
+/* Body Styling */
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
 }
 
-main {
-  padding: 20px;
+/* Container */
+.container {
+  width: 90%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
 }
 
+/* Title */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Submissions List */
+.submissions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Coursework Item */
+.coursework-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+/* Submission Item */
 .submission-item {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.submission-item h2 {
-  margin-top: 0;
+/* Submission Details */
+.submission-item p {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
 }
 
+/* Grade Input */
 .grade-input {
-  width: 50px;
-  padding: 5px;
-  margin-right: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
+/* Grade Button */
 .grade-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 15px;
+  padding: 10px;
+  font-size: 1rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
+  background: #ffcc00;
+  color: #222;
+  font-weight: bold;
+  width: 100%;
+  transition: transform 0.3s, background 0.3s;
 }
 
 .grade-button:hover {
-  background-color: #45a049;
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
