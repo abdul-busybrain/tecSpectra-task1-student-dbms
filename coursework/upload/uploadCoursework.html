@@ -9,26 +9,39 @@
   <body>
     <nav id="navbar"></nav>
 
-    <main>
+    <main class="container">
       <h1>Upload Coursework</h1>
       <form id="uploadForm">
-        <div>
+        <div class="input-group">
           <label for="courseTitle">Course Title:</label>
-          <input type="text" id="courseTitle" required />
+          <input
+            type="text"
+            id="courseTitle"
+            placeholder="Enter course title"
+            required
+          />
         </div>
-        <div>
+
+        <div class="input-group">
           <label for="description">Description:</label>
-          <textarea id="description" required></textarea>
+          <textarea
+            id="description"
+            placeholder="Provide a brief description"
+            required
+          ></textarea>
         </div>
-        <div>
+
+        <div class="input-group">
           <label for="submissionDate">Submission Date:</label>
           <input type="date" id="submissionDate" required />
         </div>
-        <div>
+
+        <div class="input-group">
           <label for="file">Upload File:</label>
-          <input type="file" id="file" />
+          <input type="file" id="file" required />
         </div>
-        <button type="submit">Upload Coursework</button>
+
+        <button type="submit" class="upload-btn">Upload Coursework</button>
       </form>
     </main>
 

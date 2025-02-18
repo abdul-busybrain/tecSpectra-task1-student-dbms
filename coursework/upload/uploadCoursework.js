@@ -12,17 +12,25 @@ function uploadCoursework(event) {
   const courseTitle = document.getElementById("courseTitle").value;
   const description = document.getElementById("description").value;
   const submissionDate = document.getElementById("submissionDate").value;
-  const file = document.getElementById("file").files[0];
+  const fileInput = document.getElementById("file");
 
-  //   The data will be typically sent to the server
+  if (!fileInput.files.length) {
+    alert("Please select a file to upload!");
+    return;
+  }
+
+  const file = fileInput.files[0];
+
+  // The data will be typically sent to the server
   // For now, we'll just store it in localStorage
-  const coursework = JSON.parse(localStorage.getItem("coursework" || "[]"));
+  const coursework = JSON.parse(localStorage.getItem("coursework") || "[]");
   coursework.push({
     courseTitle,
     description,
     submissionDate,
     fileName: file ? file.name : null,
   });
+
   localStorage.setItem("coursework", JSON.stringify(coursework));
 
   alert("Coursework uploaded successfully!");
