@@ -37,6 +37,7 @@ function updateNavbar() {
       links = `
               <li><a href='./index.html'>Dashboard</a></li>
               <li><a href='../coursework/upload/uploadCoursework.html'>Upload  Course Work</a></li>
+              <li><a href='../coursework/grade/gradeCoursework.html'>Grade  Course Work</a></li>
               <li><a href='../auth/logout.html'>Logout</a></li>
           `;
     } else if (role === "student") {

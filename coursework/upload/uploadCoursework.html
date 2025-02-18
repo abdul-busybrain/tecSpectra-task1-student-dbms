@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Coursework || Teacher</title>
+    <link rel="stylesheet" href="./uploadCoursework.css" />
+  </head>
+  <body>
+    <nav id="navbar"></nav>
+
+    <main>
+      <h1>Upload Coursework</h1>
+      <form id="uploadForm">
+        <div>
+          <label for="courseTitle">Course Title:</label>
+          <input type="text" id="courseTitle" required />
+        </div>
+        <div>
+          <label for="description">Description:</label>
+          <textarea id="description" required></textarea>
+        </div>
+        <div>
+          <label for="submissionDate">Submission Date:</label>
+          <input type="date" id="submissionDate" required />
+        </div>
+        <div>
+          <label for="file">Upload File:</label>
+          <input type="file" id="file" />
+        </div>
+        <button type="submit">Upload Coursework</button>
+      </form>
+    </main>
+
+    <script src="./uploadCoursework.js"></script>
+  </body>
+</html>
