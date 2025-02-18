@@ -3,23 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Logout</title>
+    <link rel="stylesheet" href="./logout.css" />
   </head>
-  <body
-    style="
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    "
-  >
-    <h1>Are you sure you want to logout of your account</h1>
-    <div style="display: flex; gap: 30px">
-      <a href="../dashboard/dashboard.html"><button>Back</button></a>
-      <a href="../index.html">
-        <button>Logout</button>
-      </a>
-    </div>
+  <body>
+    <main class="container">
+      <h1>Are you sure you want to log out?</h1>
+      <div class="buttons">
+        <a href="../dashboard/dashboard.html"
+          ><button class="btn back">Cancel</button></a
+        >
+        <a href="../index.html"><button class="btn logout">Logout</button></a>
+      </div>
+    </main>
   </body>
 </html>
