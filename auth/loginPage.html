@@ -3,26 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../bootstrap-cdn/css.html" />
-
-    <link rel="stylesheet" href="./loginPage.css" />
     <title>Login</title>
+    <link rel="stylesheet" href="./loginPage.css" />
   </head>
   <body>
-    <main>
+    <main class="container">
       <section class="login">
-        <div>
-          <h1>Login to your account</h1>
-          <p>Welcome back! Please log in to continue</p>
+        <div class="header">
+          <h1>Login to Your Account</h1>
+          <p>Welcome back! Please enter your credentials.</p>
         </div>
 
-        <form action="" method="" id="loginForm">
-          <div>
-            <label for="email">Email:</label>
+        <form id="loginForm">
+          <div class="input-group">
+            <label for="email">Email Address</label>
             <input
-              type="text"
+              type="email"
               id="email"
               name="email"
               placeholder="email@example.com"
@@ -30,8 +26,8 @@
             />
           </div>
 
-          <div>
-            <label for="password">Password:</label>
+          <div class="input-group">
+            <label for="password">Password</label>
             <input
               type="password"
               id="password"
@@ -40,15 +36,16 @@
               required
             />
           </div>
-          <button type="submit">Continue</button>
+
+          <button type="submit" class="btn">Continue</button>
         </form>
 
-        <p>Don't have an account? <a href="./registerPage.html">Register</a></p>
+        <p class="register-link">
+          Don't have an account? <a href="./registerPage.html">Register</a>
+        </p>
       </section>
     </main>
 
-    <!-- Bootstrap JS -->
-    <script src="../bootstrap-cdn/js.html"></script>
     <script src="./loginPage.js"></script>
   </body>
 </html>

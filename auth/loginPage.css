@@ -1,44 +1,132 @@
-.login {
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Full Page Styling */
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  height: 100vh;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  height: 100vh;
+  color: #fff;
 }
 
-.login h1 {
+/* Container Styling */
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   text-align: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
-.login form div {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
+/* Header Styling */
+.header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
 }
 
-.login form label {
-  flex: 1;
-  margin-right: 10px;
+.header p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
 }
 
-.login form input,
-.login form select {
-  flex: 2;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+/* Input Group */
+.input-group {
+  text-align: left;
+  margin-bottom: 1.2rem;
 }
 
-.login form button {
+.input-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.input-group input {
   width: 100%;
   padding: 10px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
   border-radius: 5px;
-  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
 }
 
-.login form button:hover {
-  background-color: #45a049;
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  background: #ffcc00;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+  background: #ffdb4d;
+  transform: translateY(-3px);
+}
+
+/* Register Link */
+.register-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.register-link a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .input-group input {
+    font-size: 0.9rem;
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
