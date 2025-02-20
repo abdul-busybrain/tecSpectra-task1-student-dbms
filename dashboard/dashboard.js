@@ -29,6 +29,7 @@ function updateNavbar() {
     if (role === "admin") {
       links = `
         <li><a href='./dashboard.html'>Dashboard</a></li>
+        <li><a href='../manage/students/students.html'>Manage Users</a></li>
         <li><a href='../manage/students/students.html'>Manage Students</a></li>
         <li><a href='../manage/courses/courses.html'>Manage Courses</a></li>
         <li><a href='../auth/logout.html'>Logout</a></li>
@@ -78,7 +79,7 @@ function setupRoleSpecificContent(role) {
     case "teacher":
       content = `
         <h2>Teacher Dashboard</h2>
-        <p>Welcome, Teacher. Here are your options:</p>
+        <p>You have access to manage your courses, view students submissions, and interact with your students.</p>
         <ul>
           <li><a href='../coursework/upload/uploadCoursework.html'>Upload Coursework</a></li>
           <li><a href='../coursework/grade/gradeCoursework.html'>Grade Coursework</a></li>
