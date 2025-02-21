@@ -37,8 +37,10 @@ function updateNavbar() {
     } else if (role === "teacher") {
       links = `
         <li><a href='./index.html'>Dashboard</a></li>
-        <li><a href='../coursework/upload/uploadCoursework.html'>Upload Coursework</a></li>
-        <li><a href='../coursework/grade/gradeCoursework.html'>Grade Coursework</a></li>
+        <li><a href='../manage/courses/courses.html'>Manage Courses</a></li>
+        <li><a href='#'>View Submissions</a></li>
+        <li><a href='../manage/students/students.html'>Manage Students</a></li>
+        <li><a href='#'>Profile</a></li>
         <li><a href='../auth/logout.html'>Logout</a></li>
       `;
     } else if (role === "student") {
@@ -76,17 +78,42 @@ function setupRoleSpecificContent(role) {
         </ul>
       `;
       break;
+
     case "teacher":
       content = `
-        <h2>Teacher Dashboard</h2>
-        <p>You have access to manage your courses, view students submissions, and interact with your students.</p>
-        <ul>
-          <li><a href='../coursework/upload/uploadCoursework.html'>Upload Coursework</a></li>
-          <li><a href='../coursework/grade/gradeCoursework.html'>Grade Coursework</a></li>
-          <li><a href='../communication/teacherChat.html'>Communicate with Students</a></li>
-        </ul>
-      `;
+    <h2>Teacher Dashboard</h2>
+    <p>You have access to manage your courses, view student submissions, and interact with your students.</p>
+
+    <div class="dashboard-stats">
+      <div class="stat-card">
+        <p><strong>Total Courses</strong></p>
+        <strong>0</strong>
+      </div>
+
+      <div class="stat-card">
+        <p><strong>Pending Submissions</strong></p>
+        <strong>0</strong>
+      </div>
+
+      <div class="stat-card">
+        <p><strong>Students Enrolled</strong></p>
+        <strong>0</strong>
+      </div>
+    </div>
+
+    <div class="recent-activities">
+      <p><strong>Recent Activities</strong></p>
+      <p>No recent activities</p>
+    </div>
+
+    <div class="dashboard-actions">
+      <a href="#"><button>Manage Courses</button></a>
+      <a href="#"><button>View Submissions</button></a>
+      <a href="#"><button>Manage Students</button></a>
+    </div>
+  `;
       break;
+
     case "student":
       content = `
         <h2>Student Dashboard</h2>
