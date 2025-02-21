@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Course Management</h1>
+
+        <div class="form-container">
+            <input type="text" id="courseName" placeholder="Course Name">
+            <input type="text" id="courseDescription" placeholder="Course Description">
+            <button onclick="addCourse()">Add Course</button>
+        </div>
+
+        <input type="text" id="search" placeholder="Search Course..." onkeyup="searchCourses()">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Course Name</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="courseTable"></tbody>
+        </table>
+    </div>
+
+    <script src="courses.js"></script>
+</body>
+</html>

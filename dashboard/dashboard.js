@@ -107,7 +107,7 @@ function setupRoleSpecificContent(role) {
     </div>
 
     <div class="dashboard-actions">
-      <a href="#"><button>Manage Courses</button></a>
+      <a href="../manage/courses/courses.html"><button>Manage Courses</button></a>
       <a href="#"><button>View Submissions</button></a>
       <a href="#"><button>Manage Students</button></a>
     </div>
